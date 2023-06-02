@@ -11,10 +11,10 @@
   "dependencies": {
     "@planetscale/database": "^1.7.0",
     "@t3-oss/env-nextjs": "^0.4.0",
-    "drizzle-orm": "^0.26.3",
-    "next": "^13.4.4",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "drizzle-orm": "^0.26.5",
+    "next": "13.4.5-canary.3",
+    "react": "18.3.0-canary-018c58c9c-20230601",
+    "react-dom": "18.3.0-canary-018c58c9c-20230601",
     "zod": "^3.21.4"
   },
   "devDependencies": {
