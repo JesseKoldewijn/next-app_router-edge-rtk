@@ -1,5 +1,4 @@
 import { createEnv } from "@t3-oss/env-nextjs";
-import { profileEnd } from "console";
 import { z } from "zod";
 
 export const env = createEnv({
