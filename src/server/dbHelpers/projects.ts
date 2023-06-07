@@ -1,4 +1,5 @@
-import { db, projects, type tProject } from "../db";
+import { db } from "../db";
+import { projects, type tProject } from "../schemas/projects";
 
 export const runtime = "edge";
 
