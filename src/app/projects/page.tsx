@@ -1,5 +1,5 @@
-import { type tProject } from "@/server/db";
 import { getAllProjects } from "@/server/dbHelpers/projects";
+import { type tProject } from "@/server/schemas/projects";
 import Link from "next/link";
 
 const ProjectsPage = async () => {
