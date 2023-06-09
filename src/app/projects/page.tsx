@@ -1,7 +1,16 @@
 import { getAllProjects } from "@/server/dbHelpers/projects";
 import { type tProject } from "@/server/schemas/projects";
 import { slugify } from "@/utils/string-slug";
+import { type Metadata } from "next/types";
 import Link from "next/link";
+
+export const runtime = "edge";
+
+export const metadata: Metadata = {
+  title: "Projects",
+  description:
+    "On this page you'll find a description of multiple projects that I've build over the past two to three years.",
+};
 
 const ProjectsPage = async () => {
   const projectsData: tProject[] = await getAllProjects();

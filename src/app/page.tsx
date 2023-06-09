@@ -1,34 +1,14 @@
+import { usedTech } from "@/data/usedTech";
 import Link from "next/link";
+import { type Metadata } from "next/types";
+
+export const metadata: Metadata = {
+  title: "EdgeReady Next.js by JKinsight",
+  description:
+    "On this page you'll find a description of multiple projects that I've build over the past two to three years.",
+};
 
 const Home = () => {
-  const usedTech = [
-    { name: "Next.js", link: "https://nextjs.org" },
-    {
-      name: "Drizzle-ORM",
-      link: "https://orm.drizzle.team",
-    },
-    {
-      name: "PlanetScaleDB",
-      link: "https://planetscale.com",
-    },
-    {
-      name: "TailwindCSS",
-      link: "https://tailwindcss.com",
-    },
-    {
-      name: "Shadcn-UI",
-      link: "https://ui.shadcn.com",
-    },
-    {
-      name: "TypeScript",
-      link: "https://www.typescriptlang.org/",
-    },
-    {
-      name: "React-Motion (Custom)",
-      link: "https://github.com/GlitchTech-Developments/react-motion",
-    },
-  ];
-
   return (
     <div className="mx-2 flex min-h-screen flex-col items-center justify-center gap-6">
       <h1 className="mx-auto text-xl text-gray-200 lg:text-2xl">
