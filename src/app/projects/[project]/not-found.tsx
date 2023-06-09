@@ -20,7 +20,7 @@ const ProjectsPage = () => {
   }, []);
 
   return (
-    <div className="mx-2 flex min-h-screen flex-col items-center justify-center gap-2 text-gray-200">
+    <div className="flex min-h-screen flex-col items-center justify-center gap-2 text-gray-200">
       {data !== null ? (
         <>
           <h1 className="mx-auto text-xl text-gray-200 lg:text-2xl">

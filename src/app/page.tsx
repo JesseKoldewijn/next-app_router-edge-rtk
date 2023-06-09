@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 const Home = () => {
   return (
-    <div className="mx-2 flex min-h-screen flex-col items-center justify-center gap-6">
+    <>
       <h1 className="mx-auto text-xl text-gray-200 lg:text-2xl">
         Welcome to Next.js <strong>EdgeReady</strong>
       </h1>
@@ -48,7 +48,7 @@ const Home = () => {
           Check the example!
         </Link>
       </div>
-    </div>
+    </>
   );
 };
 export default Home;

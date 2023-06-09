@@ -16,7 +16,7 @@ const ProjectsPage = async () => {
   const projectsData: tProject[] = await getAllProjects();
 
   return (
-    <div className="mx-2 flex min-h-screen flex-col items-center justify-center gap-6 text-gray-200">
+    <div className="flex min-h-screen flex-col items-center justify-center gap-6 text-gray-200">
       <h1 className="mx-auto text-xl text-gray-200 lg:text-2xl">Projects</h1>
       {projectsData.length > 0 ? (
         <div className="text-300 flex max-w-md flex-wrap gap-4">

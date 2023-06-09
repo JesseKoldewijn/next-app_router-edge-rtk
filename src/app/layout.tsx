@@ -38,7 +38,11 @@ export default function RootLayout({
         <link rel="manifest" href="/site.webmanifest" />
       </head>
       <body>
-        <main>{children}</main>
+        <main>
+          <div className="mx-4 flex min-h-screen flex-col items-center justify-center gap-6">
+            {children}
+          </div>
+        </main>
       </body>
     </html>
   );
