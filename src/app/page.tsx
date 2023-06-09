@@ -5,7 +5,7 @@ import { type Metadata } from "next/types";
 export const metadata: Metadata = {
   title: "EdgeReady Next.js by JKinsight",
   description:
-    "On this page you'll find a description of multiple projects that I've build over the past two to three years.",
+    "On this website you'll find a description of the tech I currently use most of the times, projects I've build and more tech related stuff!",
 };
 
 const Home = () => {
