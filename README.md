@@ -1,28 +1,50 @@
-# Create T3 App
+<h1 align="center">Welcome to EdgeReady Next.js 👋</h1>
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+> A fairly simple web-app using Next.js App Router, Drizzle ORM, TypeScript, Redux RTK and PlanetScaleDB together with TailwindCSS and Shadcn-ui.
 
-## What's next? How do I make an app with this?
+## Details
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+<p>
+  <a href="https://www.npmjs.com/package/@glitchtech-dev/react-motion" target="_blank">
+    <img alt="Version" src="https://img.shields.io/npm/v/@glitchtech-dev/react-motion.svg">
+  </a>
+  <!-- <a href="https://github.com/JesseKoldewijn/next-app_router-edge-rtk/blob/master/LICENSE" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/github/license/JesseKoldewijn/next-app_router-edge-rtk" />
+  </a> -->
+  <a href="https://github.com/JesseKoldewijn/next-app_router-edge-rtk#readme" target="_blank">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+  </a>
+  <a href="https://github.com/JesseKoldewijn/next-app_router-edge-rtk/graphs/commit-activity" target="_blank">
+    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
+  </a>
+</p>
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+## Checks
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+<p>
+  <a href="https://github.com/JesseKoldewijn/next-app_router-edge-rtk/actions/workflows/workspace-ci.yml">
+    <img src="https://github.com/JesseKoldewijn/next-app_router-edge-rtk/actions/workflows/workspace-ci.yml/badge.svg" alt="CI">
+  </a>
+</p>
 
-## Learn More
+---
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+## Author
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+👤 **Jesse Koldewijn**
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+- Website: https://jkinsight.nl
+- Github: [@JesseKoldewijn](https://github.com/JesseKoldewijn)
 
-## How do I deploy this?
+## 🤝 Contributing
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/JesseKoldewijn/next-app_router-edge-rtk/issues).
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+## 📝 License
+
+Copyright © 2023 [GlitchTech Developments](https://github.com/JesseKoldewijn).<br />
+This project is [MIT](https://github.com/JesseKoldewijn/next-app_router-edge-rtk/blob/master/LICENSE) licensed.
