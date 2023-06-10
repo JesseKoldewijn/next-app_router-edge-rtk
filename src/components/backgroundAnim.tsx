@@ -1,9 +1,11 @@
 "use client";
 
 import { useMotionAnimate as MotionAnimate } from "@glitchtech-dev/react-motion";
-import { type ReactNode, useMemo } from "react";
+import { type ReactNode, useEffect } from "react";
 const BgAnimate = ({ children }: { children: ReactNode }) => {
-  useMemo(() => {
+  useEffect(() => {
+    if (typeof document == "undefined") return;
+
     const BodyRef = document.body;
 
     MotionAnimate(
