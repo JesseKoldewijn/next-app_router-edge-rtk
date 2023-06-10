@@ -41,7 +41,11 @@ jobs:
       - name: Lint
         shell: bash
         run: pnpm run lint
+        env:
+          SKIP_ENV_VALIDATION: true
 
       - name: Build
         shell: bash
         run: pnpm run build
+        env:
+          SKIP_ENV_VALIDATION: true
