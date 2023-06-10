@@ -21,14 +21,14 @@ const ProjectsPage = async () => {
       {projectsData.length > 0 ? (
         <div className="text-300 flex max-w-md flex-wrap gap-4">
           {projectsData.flatMap((project: tProject) => (
-            <a
+            <Link
               key={project.id}
               href={`projects/${slugify(String(project.title))}`}
               className="flex min-h-[7rem] min-w-[15rem] flex-1 flex-col items-center gap-3 rounded-xl bg-purple-800 px-6 py-3 font-semibold shadow-sm shadow-gray-900 hover:shadow-xl"
             >
               <h2 className="mt-2">{project.title}</h2>
               <p className="text-center">{project.desc_short}</p>
-            </a>
+            </Link>
           ))}
         </div>
       ) : (

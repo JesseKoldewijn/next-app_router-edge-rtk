@@ -25,7 +25,7 @@ const Home = () => {
             href={technology.link}
             target="_blank"
             key={idx}
-            className="flex h-12 min-w-[10rem] flex-1 items-center justify-center rounded-xl bg-purple-800 font-semibold shadow-sm shadow-gray-900 hover:cursor-pointer"
+            className="flex h-12 min-w-[10rem] flex-1 items-center justify-center rounded-xl bg-purple-800 font-semibold shadow-sm shadow-gray-900 hover:cursor-pointer hover:shadow-xl"
           >
             {technology.name}
           </Link>

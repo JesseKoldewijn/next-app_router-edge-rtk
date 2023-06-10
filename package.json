@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@glitchtech-dev/react-motion": "^1.4.4",
     "@planetscale/database": "^1.7.0",
     "@t3-oss/env-nextjs": "^0.4.0",
     "drizzle-orm": "^0.26.5",
