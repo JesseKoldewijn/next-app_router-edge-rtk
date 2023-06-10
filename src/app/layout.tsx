@@ -1,5 +1,5 @@
-import BgAnimate from "@/components/backgroundAnim";
 import "@/styles/globals.css";
+
 import { type Metadata } from "next/types";
 
 export const metadata: Metadata = {
@@ -38,15 +38,13 @@ export default function RootLayout({
         />
         <link rel="manifest" href="/site.webmanifest" />
       </head>
-      <BgAnimate>
-        <body>
-          <main>
-            <div className="mx-4 flex min-h-screen flex-col items-center justify-center gap-6">
-              {children}
-            </div>
-          </main>
-        </body>
-      </BgAnimate>
+      <body>
+        <main>
+          <div className="mx-4 flex min-h-screen flex-col items-center justify-center gap-6">
+            {children}
+          </div>
+        </main>
+      </body>
     </html>
   );
 }
