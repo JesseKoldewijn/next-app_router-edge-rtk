@@ -25,13 +25,13 @@ const Home = () => {
             href={technology.link}
             target="_blank"
             key={idx}
-            className="flex h-12 min-w-[10rem] flex-1 items-center justify-center rounded-xl bg-purple-800 font-semibold shadow-sm shadow-gray-900 hover:cursor-pointer hover:shadow-xl"
+            className="flex h-12 min-w-[10rem] flex-1 items-center justify-center rounded-xl bg-brandMain font-semibold shadow-sm shadow-gray-900 hover:cursor-pointer hover:shadow-xl"
           >
             {technology.name}
           </Link>
         ))}
       </div>
-      <div className="text-md mt-2 flex max-w-lg flex-wrap gap-3 border-t-2 border-t-purple-900 pt-5 text-center font-light text-gray-300">
+      <div className="text-md mt-2 flex max-w-lg flex-wrap gap-3 border-t-2 border-t-brandMain pt-5 text-center font-light text-gray-300">
         <h3 className="mx-auto text-xl text-gray-200 lg:text-2xl">
           EdgeReady DB flow example
         </h3>
@@ -43,7 +43,7 @@ const Home = () => {
         </p>
         <Link
           href="/projects"
-          className="flex h-12 min-w-[10rem] flex-1 items-center justify-center rounded-xl bg-purple-800 font-semibold shadow-sm shadow-gray-900 hover:cursor-pointer"
+          className="flex h-12 min-w-[10rem] flex-1 items-center justify-center rounded-xl bg-brandMain font-semibold shadow-sm shadow-gray-900 hover:cursor-pointer"
         >
           Check the example!
         </Link>

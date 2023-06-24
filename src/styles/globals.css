@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 :root {
-  @apply h-screen bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-indigo-600 to-purple-700;
+  @apply h-screen bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-stone-800 to-stone-950;
 }

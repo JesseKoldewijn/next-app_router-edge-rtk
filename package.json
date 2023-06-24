@@ -13,9 +13,9 @@
     "@planetscale/database": "^1.7.0",
     "@t3-oss/env-nextjs": "^0.4.0",
     "drizzle-orm": "^0.26.5",
-    "next": "13.4.5-canary.9",
-    "react": "18.3.0-canary-21a161fa3-20230609",
-    "react-dom": "18.3.0-canary-21a161fa3-20230609",
+    "next": "13.4.7",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "zact": "^0.0.2",
     "zod": "^3.21.4"
   },
