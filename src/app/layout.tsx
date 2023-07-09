@@ -40,7 +40,7 @@ export default function RootLayout({
       </head>
       <body>
         <main>
-          <div className="mx-4 flex min-h-screen flex-col items-center justify-center gap-6">
+          <div className="mx-4 flex min-h-screen flex-col items-center justify-center gap-6 text-gray-300">
             {children}
           </div>
         </main>
