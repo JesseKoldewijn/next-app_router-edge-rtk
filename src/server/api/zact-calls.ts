@@ -9,10 +9,7 @@ export const getProjectNames = async () => {
   const data = (await db.select().from(projects)) as tProject[];
   const cleanedData = data.map((project) => {
     return {
-      id: "None of your business!",
-      title: project.title,
-      desc_short: project.desc_short,
-      desc_long: project.desc_long,
+      ...project,
     };
   });
 
