@@ -1,6 +1,6 @@
 <h1 align="center">Welcome to EdgeReady Next.js 👋</h1>
 
-> A fairly simple web-app using Next.js App Router, Drizzle ORM, TypeScript, Redux RTK and PlanetScaleDB together with TailwindCSS and Shadcn-ui.
+> A fairly simple web-app using Next.js App Router, Drizzle ORM, TypeScript, Redux RTK and PlanetScaleDB together with TailwindCSS, Shadcn-ui and more!
 
 ## Details
 
