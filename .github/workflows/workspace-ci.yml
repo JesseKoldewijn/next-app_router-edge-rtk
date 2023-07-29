@@ -53,5 +53,4 @@ jobs:
           DATABASE_USERNAME: ${{ secrets.DATABASE_USERNAME }}
           DATABASE_PASSWORD: ${{ secrets.DATABASE_PASSWORD }}
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
-        run: echo $DATABASE_HOST && pnpm run build
-       
+        run: pnpm run build
