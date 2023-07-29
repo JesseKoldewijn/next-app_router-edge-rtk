@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "drizzle:push": "drizzle-kit push",
+    "drizzle:push": "drizzle-kit push:mysql",
     "drizzle:studio": "drizzle-kit studio"
   },
   "dependencies": {
@@ -15,10 +15,10 @@
     "@planetscale/database": "^1.8.0",
     "@t3-oss/env-nextjs": "^0.6.0",
     "drizzle-orm": "^0.27.0",
+    "nanoid": "^4.0.2",
     "next": "13.4.9",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "zact": "^0.0.2",
     "zod": "^3.21.4"
   },
   "devDependencies": {

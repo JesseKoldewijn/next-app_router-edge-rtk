@@ -1,21 +1,43 @@
-import { slugify } from "@/utils/string-slug";
+import { desc, sql } from "drizzle-orm";
+
 import { db } from "../db";
-import { projects, type tProject } from "../schemas/projects";
+import { projects, type Project } from "../schemas/projects";
 
 export const runtime = "edge";
 
-export const getAllProjects = async () => {
-  return (await db.select().from(projects)) as tProject[];
+export const getAllProjects = async (maxCount?: number) => {
+  return (await db
+    .select()
+    .from(projects)
+    .orderBy(desc(projects.createdAt))
+    .limit(Number(maxCount ?? 0))) as Project[];
+};
+
+export const getAllProjectNames = async (maxCount?: number) => {
+  return await db
+    .select({
+      title: projects.title,
+    })
+    .from(projects)
+    .orderBy(desc(projects.createdAt))
+    .limit(Number(maxCount ?? 0));
+};
+
+export const getAllProjectSlugs = async (maxCount?: number) => {
+  return await db
+    .select({
+      slug: projects.slug,
+    })
+    .from(projects)
+    .orderBy(desc(projects.createdAt))
+    .limit(Number(maxCount ?? 0));
 };
 
 export const getProjectBySlug = async (slug: string) => {
-  const allProjects = await getAllProjects();
-  const selectedProject = allProjects.find((obj) => {
-    if (obj.title == null) return;
-    if (slugify(obj.title) == slug) {
-      return obj;
-    }
-  });
+  const result = await db
+    .select()
+    .from(projects)
+    .where(sql`${projects.slug} = ${slug}`);
 
-  return selectedProject;
+  return result[0];
 };
