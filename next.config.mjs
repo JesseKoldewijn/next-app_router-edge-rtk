@@ -4,8 +4,13 @@
  */
 await import("./src/env.mjs");
 
+const withPWA = require('next-pwa')({
+  dest: 'public'
+})
+
 /** @type {import("next").NextConfig} */
-const config = {
+const config = withPWA({
   reactStrictMode: true,
 };
+
 export default config;

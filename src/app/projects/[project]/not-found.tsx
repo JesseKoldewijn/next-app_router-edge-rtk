@@ -6,7 +6,7 @@ import { slugify } from "@/utils/string-slug";
 import Link from "next/link";
 
 export const runtime = "edge";
-export const revalidate = 60 * 60 * 24; // 24 hours
+export const revalidate = 86400;
 
 const ProjectsPage = async () => {
   const data = await getAllProjects();

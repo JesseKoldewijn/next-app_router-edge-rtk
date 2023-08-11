@@ -7,7 +7,7 @@ import {
 import LinkButton from "@/components/ui/link-button";
 
 export const runtime = "edge";
-export const revalidate = 60 * 60 * 24; // 24 hours
+export const revalidate = 86400;
 
 export const generateStaticParams = async () => {
   const projectsData = await getAllProjectSlugs();

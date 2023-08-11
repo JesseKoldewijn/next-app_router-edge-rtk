@@ -3,7 +3,7 @@ import Technologies from "@/components/views/home/technologies";
 import { type Metadata } from "next/types";
 
 export const runtime = "edge";
-export const revalidate = 60 * 60 * 24; // 24 hours
+export const revalidate = 86400;
 
 export const metadata: Metadata = {
   title: "EdgeReady Next.js by JKinsight",
@@ -26,22 +26,41 @@ const Home = () => {
         }
       </h2>
       <Technologies />
-      <div className="text-md mt-2 flex max-w-lg flex-wrap gap-3 border-t-2 border-t-brandMain pt-5 text-center font-light text-gray-300">
-        <h3 className="mx-auto text-xl text-gray-200 lg:text-2xl">
-          EdgeReady DB flow example
-        </h3>
-        <p className="max-w-lg text-center text-lg text-gray-300">
-          {
-            "In this example I've used PlanetScaleDB as the Database, Planetscale-db (the package) to connect to the Database,\
+      <section>
+        <h2>{"Demo&apos;s"}</h2>
+        <div className="text-md mt-2 flex max-w-lg flex-wrap gap-3 border-t-2 border-t-brandMain pt-5 text-center font-light text-gray-300">
+          <h3 className="mx-auto text-xl text-gray-200 lg:text-2xl">
+            EdgeReady DB flow example
+          </h3>
+          <p className="max-w-lg text-center text-lg text-gray-300">
+            {
+              "In this example I've used PlanetScaleDB as the Database, Planetscale-db (the package) to connect to the Database,\
              Drizzle-ORM to interface the contents of this DB and server-components to display this content."
-          }
-        </p>
-        <LinkButton
-          name="Check the example!"
-          href="/projects"
-          className="flex h-12 min-w-[10rem] flex-1 items-center justify-center rounded-xl bg-brandMain font-semibold shadow-sm shadow-gray-900 hover:cursor-pointer"
-        />
-      </div>
+            }
+          </p>
+          <LinkButton
+            name="Check the example!"
+            href="/projects"
+            className="flex h-12 min-w-[10rem] flex-1 items-center justify-center rounded-xl bg-brandMain font-semibold shadow-sm shadow-gray-900 hover:cursor-pointer"
+          />
+        </div>
+        <div className="text-md mt-2 flex max-w-lg flex-wrap gap-3 border-t-2 border-t-brandMain pt-5 text-center font-light text-gray-300">
+          <h3 className="mx-auto text-xl text-gray-200 lg:text-2xl">
+            EdgeReady DB flow example
+          </h3>
+          <p className="max-w-lg text-center text-lg text-gray-300">
+            {
+              "In this example I've used PlanetScaleDB as the Database, Planetscale-db (the package) to connect to the Database,\
+             Drizzle-ORM to interface the contents of this DB and server-components to display this content."
+            }
+          </p>
+          <LinkButton
+            name="Check the example!"
+            href="/projects"
+            className="flex h-12 min-w-[10rem] flex-1 items-center justify-center rounded-xl bg-brandMain font-semibold shadow-sm shadow-gray-900 hover:cursor-pointer"
+          />
+        </div>
+      </section>
     </>
   );
 };

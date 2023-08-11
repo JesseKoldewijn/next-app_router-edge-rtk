@@ -6,6 +6,7 @@ import Link from "next/link";
 import LinkButton from "@/components/ui/link-button";
 
 export const runtime = "edge";
+export const revalidate = 86400;
 
 export const metadata: Metadata = {
   title: "Projects",
