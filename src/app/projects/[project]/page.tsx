@@ -7,7 +7,7 @@ import {
 import LinkButton from "@/components/ui/link-button";
 import ProjectListItem from "@/components/views/projects/projectListItem";
 
-export const revalidate = 86400;
+export const dynamicParams = true;
 
 export const generateStaticParams = async () => {
   const projectsData = await getAllProjectSlugs();

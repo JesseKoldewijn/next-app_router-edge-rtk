@@ -25,7 +25,6 @@ export function OPTIONS() {
 }
 
 const handler = async (req: Request) => {
-  console.log(req);
   const ctx = {
     req,
   } as never as CreateNextContextOptions;

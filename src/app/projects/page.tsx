@@ -6,6 +6,7 @@ import Link from "next/link";
 import LinkButton from "@/components/ui/link-button";
 
 export const revalidate = 86400;
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Projects",

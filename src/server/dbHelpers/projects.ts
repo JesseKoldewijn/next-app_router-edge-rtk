@@ -32,10 +32,10 @@ export const getAllProjectSlugs = async (maxCount?: number) => {
 };
 
 export const getProjectBySlug = async (slug: string) => {
-  const result = await db
+  const result = (await db
     .select()
     .from(projects)
-    .where(sql`${projects.slug} = ${slug}`);
+    .where(sql`${projects.slug} = ${slug}`)) as Project[];
 
-  return result[0];
+  return Array.isArray(result) && result?.length > 0 ? result[0] : undefined;
 };

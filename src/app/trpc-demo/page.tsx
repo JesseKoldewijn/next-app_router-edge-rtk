@@ -4,6 +4,11 @@ import TRPC_Demonstration from "@/components/views/demos/trpc-query";
 
 export const revalidate = 86400;
 
+export const metadata = {
+  title: "tRPC Demo",
+  description: "tRPC Demo - A demonstration of tRPC in the App Router",
+};
+
 const tRPC_Demo = () => {
   return (
     <>

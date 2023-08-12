@@ -5,7 +5,7 @@ import { type Project } from "@/server/schemas/projects";
 import { slugify } from "@/utils/string-slug";
 import Link from "next/link";
 
-export const revalidate = 86400;
+export const dynamic = "force-dynamic";
 
 const ProjectsPage = async () => {
   const data = await getAllProjects();
