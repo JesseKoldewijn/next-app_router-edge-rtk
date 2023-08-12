@@ -3,8 +3,6 @@ import { db } from "../db";
 import { type Technology, technologies } from "../schemas/technologies";
 import { asc } from "drizzle-orm";
 
-export const runtime = "edge";
-
 export const getAllTechnologies = async () => {
   return (await db
     .select()

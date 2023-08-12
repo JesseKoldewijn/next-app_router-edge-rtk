@@ -2,7 +2,6 @@ import LinkButton from "@/components/ui/link-button";
 import Technologies from "@/components/views/home/technologies";
 import { type Metadata } from "next/types";
 
-export const runtime = "edge";
 export const revalidate = 86400;
 
 export const metadata: Metadata = {
@@ -21,41 +20,39 @@ const Home = () => {
         </strong>
       </h1>
       <h2 className="max-w-lg text-center text-lg text-gray-300">
-        {
-          "In this project I show you how to build a fully edge-ready FullStack application using the following tech:"
-        }
+        In this project I show you how to build a fully edge-ready FullStack
+        application using the following tech:
       </h2>
       <Technologies />
-      <section>
-        <h2>{"Demo&apos;s"}</h2>
-        <div className="text-md mt-2 flex max-w-lg flex-wrap gap-3 border-t-2 border-t-brandMain pt-5 text-center font-light text-gray-300">
+      <section className="mt-2 flex flex-col">
+        <div className="text-md flex max-w-lg flex-wrap gap-3 py-4 text-center font-light text-gray-300">
           <h3 className="mx-auto text-xl text-gray-200 lg:text-2xl">
-            EdgeReady DB flow example
+            tRPC flow example
           </h3>
           <p className="max-w-lg text-center text-lg text-gray-300">
-            {
-              "In this example I've used PlanetScaleDB as the Database, Planetscale-db (the package) to connect to the Database,\
-             Drizzle-ORM to interface the contents of this DB and server-components to display this content."
-            }
+            In this example I&apos;ve used PlanetScaleDB as the Database,
+            Planetscale-db (the package) to connect to the Database, Drizzle-ORM
+            to interface the contents of this DB and tRPC to fetch data from the
+            DB.
           </p>
           <LinkButton
-            name="Check the example!"
-            href="/projects"
+            name="Check the tRPC example!"
+            href="/trpc-demo"
             className="flex h-12 min-w-[10rem] flex-1 items-center justify-center rounded-xl bg-brandMain font-semibold shadow-sm shadow-gray-900 hover:cursor-pointer"
           />
         </div>
-        <div className="text-md mt-2 flex max-w-lg flex-wrap gap-3 border-t-2 border-t-brandMain pt-5 text-center font-light text-gray-300">
+        <div className="text-md mt-2 flex max-w-lg flex-wrap gap-3 pt-5 text-center font-light text-gray-300">
           <h3 className="mx-auto text-xl text-gray-200 lg:text-2xl">
             EdgeReady DB flow example
           </h3>
           <p className="max-w-lg text-center text-lg text-gray-300">
-            {
-              "In this example I've used PlanetScaleDB as the Database, Planetscale-db (the package) to connect to the Database,\
-             Drizzle-ORM to interface the contents of this DB and server-components to display this content."
-            }
+            In this example I&apos;ve used PlanetScaleDB as the Database,
+            Planetscale-db (the package) to connect to the Database, Drizzle-ORM
+            to interface the contents of this DB and server-components to
+            display this content.
           </p>
           <LinkButton
-            name="Check the example!"
+            name="Check the RSC example!"
             href="/projects"
             className="flex h-12 min-w-[10rem] flex-1 items-center justify-center rounded-xl bg-brandMain font-semibold shadow-sm shadow-gray-900 hover:cursor-pointer"
           />

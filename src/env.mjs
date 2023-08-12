@@ -7,6 +7,8 @@ export const env = createEnv({
    * isn't built with invalid env vars.
    */
   server: {
+    PORT: z.string(),
+    VERCEL_URL: z.string(),
     NODE_ENV: z.enum(["development", "test", "production"]),
     DATABASE_HOST: z.string(),
     DATABASE_USERNAME: z.string(),
@@ -27,6 +29,8 @@ export const env = createEnv({
    * middlewares) or client-side so we need to destruct manually.
    */
   runtimeEnv: {
+    PORT: process.env.PORT,
+    VERCEL_URL: process.env.VERCEL_URL,
     NODE_ENV: process.env.NODE_ENV,
     DATABASE_HOST: process.env.DATABASE_HOST,
     DATABASE_USERNAME: process.env.DATABASE_USERNAME,

@@ -5,7 +5,6 @@ import { type Project } from "@/server/schemas/projects";
 import { slugify } from "@/utils/string-slug";
 import Link from "next/link";
 
-export const runtime = "edge";
 export const revalidate = 86400;
 
 const ProjectsPage = async () => {

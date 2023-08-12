@@ -3,8 +3,6 @@ import { desc, sql } from "drizzle-orm";
 import { db } from "../db";
 import { projects, type Project } from "../schemas/projects";
 
-export const runtime = "edge";
-
 export const getAllProjects = async (maxCount?: number) => {
   return (await db
     .select()
