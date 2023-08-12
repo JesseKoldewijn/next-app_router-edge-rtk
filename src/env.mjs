@@ -7,7 +7,7 @@ export const env = createEnv({
    * isn't built with invalid env vars.
    */
   server: {
-    PORT: z.string(),
+    PORT: z.string().nullish(),
     VERCEL_URL: z.string(),
     NODE_ENV: z.enum(["development", "test", "production"]),
     DATABASE_HOST: z.string(),
