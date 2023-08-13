@@ -2,12 +2,10 @@ import { getAllProjects } from "@/server/dbHelpers/projects";
 import { type Project } from "@/server/schemas/projects";
 import { slugify } from "@/utils/string-slug";
 import { type Metadata } from "next/types";
-import Link from "next/link";
 import LinkButton from "@/components/ui/link-button";
 import ProjectListItem from "@/components/views/projects/projectListItem";
 
 export const revalidate = 86400;
-export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Projects",
