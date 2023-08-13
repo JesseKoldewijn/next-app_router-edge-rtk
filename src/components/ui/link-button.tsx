@@ -7,7 +7,7 @@ import { useMotionAnimate as MotionAnimate } from "@glitchtech-dev/react-motion"
 
 type NavLinkProps = LinkProps & HTMLAttributes<HTMLAnchorElement>;
 interface Props extends NavLinkProps {
-  name: string;
+  name?: string;
 }
 
 const LinkButton = (props: Props) => {
@@ -29,7 +29,7 @@ const LinkButton = (props: Props) => {
             "blur(280px)",
           ],
         },
-        { duration: 0.15, easing: "ease-in" }
+        { duration: 0.15, easing: "ease-in" },
       );
     } else if (animationType === "mouseleave") {
       MotionAnimate(
@@ -43,7 +43,7 @@ const LinkButton = (props: Props) => {
             "blur(0px)",
           ],
         },
-        { duration: 0.3, easing: "ease-out" }
+        { duration: 0.3, easing: "ease-out" },
       );
     } else {
       MotionAnimate(ButtonRef.current, {
@@ -63,7 +63,7 @@ const LinkButton = (props: Props) => {
         onMouseLeave={ButtonAnimation}
         {...props}
       >
-        {props.name}
+        {props.name ? props.name : props.children}
       </Link>
     </>
   );

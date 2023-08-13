@@ -1,23 +1,10 @@
 import { notFound } from "next/navigation";
 
-import {
-  getAllProjectSlugs,
-  getProjectBySlug,
-} from "@/server/dbHelpers/projects";
+import { getProjectBySlug } from "@/server/dbHelpers/projects";
 import LinkButton from "@/components/ui/link-button";
 import ProjectListItem from "@/components/views/projects/projectListItem";
 
-export const dynamicParams = true;
-
-export const generateStaticParams = async () => {
-  const projectsData = await getAllProjectSlugs();
-
-  return projectsData.map((project) => {
-    return {
-      slug: project.slug,
-    };
-  });
-};
+export const revalidate = 86400; // 24 hours
 
 type Props = {
   params: { project: string };
