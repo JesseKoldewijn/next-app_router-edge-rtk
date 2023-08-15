@@ -24,7 +24,8 @@
         "name": "next"
       }
     ],
-    "incremental": true
+    "incremental": true,
+    "types": ["node", "next", "next/types/global", "bun-types"]
   },
   "include": [
     ".eslintrc.cjs",
