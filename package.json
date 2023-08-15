@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "start:container": "next start -p $PORT",
     "lint": "next lint",
     "drizzle:push": "drizzle-kit push:mysql",
     "drizzle:studio": "drizzle-kit studio"

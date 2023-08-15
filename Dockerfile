@@ -72,5 +72,5 @@ COPY --from=Builder /app/.next ./.next
 EXPOSE $PORT
 
 # Run app 
-CMD ["pnpm", "start", "-p $PORT"]
+CMD ["pnpm", "start:container"]
 
