@@ -25,7 +25,13 @@
       }
     ],
     "incremental": true,
-    "types": ["node", "next", "next/types/global", "bun-types"]
+    "types": [
+      "node",
+      "next",
+      "next/types/global",
+      "@glitchtech-dev/react-motion",
+      "bun-types"
+    ]
   },
   "include": [
     ".eslintrc.cjs",
