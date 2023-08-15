@@ -28,6 +28,12 @@ RUN NODE_ENV="production" pnpm build
 # ? Production Stage
 FROM node:lts-slim as Runner
 
+# Get environment variable for app port with fallback to 3000
+ARG PORT=3000
+
+# Set environment variable for app port
+ENV PORT=$PORT
+
 # Set working directory
 WORKDIR /app
 
@@ -52,8 +58,8 @@ COPY . .
 # Copy builded app from builder stage
 COPY --from=Builder /app/.next ./.next
 
-# Expose port
-EXPOSE 3000
+# Expose port based on environment variable or ARG
+EXPOSE $PORT
 
 # Run app 
 CMD ["pnpm", "start"]
