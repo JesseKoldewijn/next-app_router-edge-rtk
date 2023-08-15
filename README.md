@@ -2,6 +2,24 @@
 
 > A fairly simple web-app using Next.js App Router, Drizzle ORM, TypeScript, Redux RTK and PlanetScaleDB together with TailwindCSS, Shadcn-ui and more!
 
+## Check the demo deployments
+
+<a href="https://next-app-edge-rtk.vercel.app">
+<img 
+  alt="Check Vercel deployment" 
+  src="https://dka575ofm4ao0.cloudfront.net/pages-transactional_logos/retina/160919/CleanShot_2020-05-26_at_21.56.49.png" height="50" />
+</a>
+<a href="https://next-approuter-edge-rtk-production.up.railway.app">
+<img 
+  alt="Check Railway deployment" 
+  src="https://railway.app/brand/logotype-dark.png" height="50" />
+</a>
+
+## Use as Template
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/JesseKoldewijn/next-app_router-edge-rtk)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/BMAjex?referralCode=p33jXU)
+
 ## Details
 
 <p>
