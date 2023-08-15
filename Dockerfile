@@ -10,9 +10,6 @@ COPY package*.json ./
 # Copy bun lockfile if exists 
 COPY pnpm-lock.yaml ./
 
-# Copy environment variables file
-COPY .env ./
-
 # Install pnpm globally
 RUN npm install -g pnpm@latest
 
@@ -42,9 +39,6 @@ COPY package*.json ./
 
 # Copy bun lockfile if exists 
 COPY pnpm-lock.yaml ./
-
-# Copy environment variables file
-COPY .env ./
 
 # Install pnpm globally
 RUN npm install -g pnpm@latest
