@@ -21,13 +21,8 @@ const LinkButton = (props: Props) => {
       MotionAnimate(
         ButtonRef.current,
         {
-          scale: 1.05,
-          backdropFilter: [
-            "blur(0px)",
-            "blur(90px)",
-            "blur(180px)",
-            "blur(280px)",
-          ],
+          scaleX: 1.05,
+          scaleY: 1.05,
         },
         { duration: 0.15, easing: "ease-in" },
       );
@@ -35,20 +30,15 @@ const LinkButton = (props: Props) => {
       MotionAnimate(
         ButtonRef.current,
         {
-          scale: 1,
-          backdropFilter: [
-            "blur(280px)",
-            "blur(180px)",
-            "blur(90px)",
-            "blur(0px)",
-          ],
+          scaleX: 1,
+          scaleY: 1,
         },
         { duration: 0.3, easing: "ease-out" },
       );
     } else {
       MotionAnimate(ButtonRef.current, {
-        scale: 1.05,
-        backdropFilter: "blur(280px)",
+        scaleX: 1.05,
+        scaleY: 1.05,
       });
     }
 

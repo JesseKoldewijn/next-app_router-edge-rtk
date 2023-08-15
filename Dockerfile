@@ -1,5 +1,5 @@
 # ? Build stage
-FROM oven/bun:latest as Builder
+FROM node:lts-slim as Builder
 
 # Set working directory
 WORKDIR /app
@@ -8,22 +8,25 @@ WORKDIR /app
 COPY package*.json ./
 
 # Copy bun lockfile if exists 
-COPY bun.lockb ./
+COPY pnpm-lock.yaml ./
 
 # Copy environment variables file
 COPY .env ./
 
+# Install pnpm globally
+RUN npm install -g pnpm@latest
+
 # Install dependencies
-RUN bun install
+RUN pnpm install
 
 # Copy source code
 COPY . .
 
 # Build app
-RUN NODE_ENV="production" bun run build
+RUN NODE_ENV="production" pnpm build
 
 # ? Production Stage
-FROM oven/bun:latest as Runner
+FROM node:lts-slim as Runner
 
 # Set working directory
 WORKDIR /app
@@ -31,14 +34,17 @@ WORKDIR /app
 # Copy package.json and package-lock.json
 COPY package*.json ./
 
+# Copy bun lockfile if exists 
+COPY pnpm-lock.yaml ./
+
 # Copy environment variables file
 COPY .env ./
 
-# Copy bun lockfile if exists 
-COPY bun.lockb ./
+# Install pnpm globally
+RUN npm install -g pnpm@latest
 
 # Install dependencies
-RUN bun install --production
+RUN pnpm install --production
 
 # Copy source code
 COPY . .
@@ -50,5 +56,5 @@ COPY --from=Builder /app/.next ./.next
 EXPOSE 3000
 
 # Run app 
-CMD ["bun", "run", "start"]
+CMD ["pnpm", "start"]
 
