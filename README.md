@@ -64,5 +64,5 @@ Give a ⭐️ if this project helped you!
 
 ## 📝 License
 
-Copyright © 2023 [GlitchTech Developments](https://github.com/JesseKoldewijn).<br />
+Copyright © 2023 [Jesse Koldewijn](https://github.com/JesseKoldewijn).<br />
 This project is [MIT](https://github.com/JesseKoldewijn/next-app_router-edge-rtk/blob/master/LICENSE) licensed.
