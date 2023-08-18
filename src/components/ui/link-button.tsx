@@ -6,8 +6,10 @@ import Link, { type LinkProps } from "next/link";
 import { useMotionAnimate as MotionAnimate } from "@glitchtech-dev/react-motion";
 
 type NavLinkProps = LinkProps & HTMLAttributes<HTMLAnchorElement>;
+
 interface Props extends NavLinkProps {
   name?: string;
+  target?: string;
 }
 
 const LinkButton = (props: Props) => {
